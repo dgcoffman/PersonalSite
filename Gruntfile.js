@@ -279,6 +279,7 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
+            'blog/*',
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
@@ -397,6 +398,8 @@ module.exports = function (grunt) {
     'usemin',
     'htmlmin'
   ]);
+
+
 
   grunt.registerTask('default', [
     'newer:jshint',
