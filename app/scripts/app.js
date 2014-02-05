@@ -7,15 +7,19 @@ angular.module('dgcoffmangithubioApp', [
   'ngRoute'
 ])
   .config(function ($locationProvider, $routeProvider) {
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController'
       })
       .when('/resume', {
         templateUrl: 'views/resume.html',
-        controller: 'MainCtrl'
+        controller: 'MainController'
+      })
+      .when('/writing/', {
+        templateUrl: 'views/resume.html',
+        controller: 'BlogController'
       })
       .otherwise({
         redirectTo: '/'
