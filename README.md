@@ -1,0 +1,1 @@
+This is a yeoman scaffolded angular app that contains a Jekyll blog. You can build this with grunt and deploy the dist folder to gh-pages and it will be a woring personal angular site with a blog hosted at /blog
