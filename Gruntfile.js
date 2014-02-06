@@ -279,7 +279,6 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [
-            'blog/**',
             '*.{ico,png,txt}',
             '.htaccess',
             '*.html',
@@ -288,7 +287,14 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp}',
             'fonts/*'
           ]
-        }, {
+        }, 
+        {
+          expand: true,
+          cwd: '<%= yeoman.app %>/blog/_site',
+          src: '**',
+          dest: '<%= yeoman.dist %>/blog/'
+        },
+        {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
@@ -402,8 +408,8 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('default', [
-    'newer:jshint',
-    'test',
+    //'newer:jshint',
+    //'test',
     'build'
   ]);
 };
