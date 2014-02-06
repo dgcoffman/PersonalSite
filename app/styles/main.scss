@@ -29,6 +29,8 @@ body
 .header a
 {
     color: #fff;
+    font-variant: small-caps;
+    font-size: 22px;
     @include transition(all 0.2s ease-in-out);
 }
 
@@ -42,7 +44,8 @@ $break-small: 767px;
 
 .header a:hover
 {
-    color: #888;
+    color: #000;
+    opacity: 0.4;
 }
 
 .section-lead
