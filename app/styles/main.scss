@@ -17,7 +17,13 @@ body
 
 .header
 {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #E6B1B5;
+    
+
+    background-image: linear-gradient(to bottom,#E6B1B5 0,#6BE8A7 100%);
+    
 }
 
 .header a
@@ -41,12 +47,16 @@ $break-small: 767px;
 
 .section-lead
 {
-    font-size: 3em;
-    padding: 60px 20px;
-    color: #fff;
+    font-size: 4.5em;
+    padding: 80px 15px;
+    
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     background-color: #82ABBB;
-    line-height: 2em;
+    background-image: linear-gradient(to bottom,#563d7c 0,#82ABBB 100%);
+    color: #fff;
+    /*background-color: #fff;
+    color: #333;*/
+
 }
 
 .huge
@@ -60,6 +70,11 @@ $break-small: 767px;
     padding: 20px 15px;
     text-shadow: 0 1px 0 rgba(0,0,0,.1);
     background-color: #fff;
+}
+
+#social-links
+{
+    margin-bottom: 10px;
 }
 
 .section-social a img
@@ -79,10 +94,12 @@ $break-small: 767px;
 
 .footer
 {
-    padding-top: 60px;
-    background-color: #333;
-    text-align: center;
-    color: #82ABBB;
+padding-top: 60px;
+background-color: #333;
+text-align: center;
+color: #82ABBB;
+padding-bottom: 50px;
+line-height: 10px;
 }
 
 #hypem-widget
