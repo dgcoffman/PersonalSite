@@ -45,6 +45,10 @@ $break-small: 767px;
     opacity: 0.4;
 }
 
+.remind-logo {
+    width: 260px;
+}
+
 .section-lead
 {
     font-size: 3.5em;
@@ -72,13 +76,13 @@ $break-small: 767px;
 
 #social-links
 {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .section-social a img
 {
     display: inline block;
-    margin: 0 10px 10px 0;
+    margin: 10px 10px 10px 0;
     padding: 0;
     opacity: 0.85;
     @include transition(all 0.2s ease-in-out);
